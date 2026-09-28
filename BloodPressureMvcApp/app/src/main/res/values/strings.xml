@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Blood Pressure MVC</string>
+    <string name="input_data">Ввести данные</string>
+</resources>
