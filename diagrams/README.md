@@ -1,18 +1,23 @@
 # Графическая часть RateFlow
 
-| Исходник SysMLv2 | Изображение | Содержание |
+Схемы экранов оформлены по предоставленному образцу: сверху определение страницы `part def`, посередине её составные части `part`, снизу определения компонентов с атрибутами. Чёрный ромб обозначает композицию страницы и её частей; стрелки от частей к нижним блокам показывают их типы.
+
+| Экран или модель | Исходник SysMLv2 | Изображение |
 |---|---|---|
-| [use-cases.sysml](use-cases.sysml) | [use-cases.png](use-cases.png) | Шесть вариантов использования, их субъект RateFlow и актор User |
-| [ui-structure.sysml](ui-structure.sysml) | [ui-structure.png](ui-structure.png) | Структура приложения, четыре экрана и элементы интерфейса |
+| Курсы валют | [rates-page.sysml](rates-page.sysml) | [rates-page.png](rates-page.png) |
+| Конвертер валют | [converter-page.sysml](converter-page.sysml) | [converter-page.png](converter-page.png) |
+| История курсов | [history-page.sysml](history-page.sysml) | [history-page.png](history-page.png) |
+| Уведомления | [notifications-page.sysml](notifications-page.sysml) | [notifications-page.png](notifications-page.png) |
+| Варианты использования | [use-cases.sysml](use-cases.sysml) | [use-cases.png](use-cases.png) |
 
-Исходники написаны в текстовой нотации SysMLv2. Первая модель использует `use case def`, `subject`, `actor` и `objective`; вторая — `part def`, `part` и строковые атрибуты. Структурная модель GUI описывает состав экранов, а не точные координаты реальных кнопок.
+Каждая модель страницы находится в своём пакете и содержит шесть компонентов. Header и Footer имеют локальные определения внутри пакетов; остальные компоненты отражают назначение экрана. Это структурные прототипы GUI, описывающие состав страниц, а не координаты реальных элементов сайта.
 
-PNG созданы локальным скриптом [render.ps1](render.ps1), который читает эти модели и рисует их представления средствами Windows System.Drawing. Это специально подготовленные иллюстрации моделей, а не экспорт из полноценного SysMLv2-редактора. Скрипт поддерживает только структуру этих двух исходников и не проверяет семантику всего языка. Проверка специализированным SysMLv2-компилятором не выполнялась.
+PNG созданы локальными скриптами Windows System.Drawing: [render-pages.ps1](render-pages.ps1) строит схемы страниц из исходников, [render.ps1](render.ps1) запускает его и создаёт диаграмму вариантов использования. Скрипты поддерживают только структуру этих моделей и не заменяют полноценный редактор и семантический анализатор SysMLv2. Проверка специализированным компилятором не выполнялась.
 
-Пересоздать обе картинки из корня репозитория в PowerShell:
+Пересоздать все пять картинок из корня репозитория:
 
 ```powershell
 powershell -NoProfile -ExecutionPolicy Bypass -File diagrams/render.ps1
 ```
 
-Для просмотра исходников в редакторе SysMLv2 можно использовать VS Code с расширением `JamieD.sysml-v2-support`: открыть файл, выполнить `SysML: Show Model Visualizer`, затем `SysML: Export Visualization (PNG/SVG)`. Результат расположения блоков может отличаться от локальных PNG.
+Для просмотра исходников в редакторе SysMLv2 можно использовать VS Code с расширением `JamieD.sysml-v2-support`: открыть файл, выполнить `SysML: Show Model Visualizer`, затем `SysML: Export Visualization (PNG/SVG)`. Расположение блоков в редакторе может отличаться от подготовленных PNG.
