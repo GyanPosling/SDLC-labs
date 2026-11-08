@@ -1,0 +1,113 @@
+@startuml
+title MVC structure of BloodPressureMvcApp
+
+skinparam classAttributeIconSize 0
+skinparam shadowing false
+skinparam linetype ortho
+
+class MainActivity {
+    -model: PressureModel
+    -controller: PressureController
+    -dateFormatter: DateTimeFormatter
+    -lastDataTextView: TextView
+    -idealPressureTextView: TextView
+    -currentPressureTextView: TextView
+    -assessmentTextView: TextView
+    +onCreate(savedInstanceState: Bundle?)
+    +onDestroy()
+    +onPressureInput(input: PressureInput)
+    -render(state: PressureState)
+    -lastInput(): PressureInput?
+    -showError(message: String)
+}
+
+class PressureController {
+    -model: PressureModel
+    +onInputConfirmed(input: PressureInput)
+}
+
+class InputDialogFragment {
+    +onCreateDialog(savedInstanceState: Bundle?): Dialog
+    -restoreLastInput(...)
+    -parseInput(...): PressureInput?
+    +newInstance(lastInput: PressureInput?): InputDialogFragment
+}
+
+interface Listener {
+    +onPressureInput(input: PressureInput)
+}
+
+class PressureModel {
+    -listeners: MutableSet<(PressureState) -> Unit>
+    +state: PressureState
+    +addListener(listener: (PressureState) -> Unit)
+    +removeListener(listener: (PressureState) -> Unit)
+    +submit(input: PressureInput, today: LocalDate)
+    -previousInput(): PressureInput?
+    -validate(input: PressureInput, today: LocalDate): String?
+    -calculate(input: PressureInput, today: LocalDate): PressureResult
+}
+
+class PressureInput {
+    +birthDate: LocalDate
+    +weightKg: Double
+    +systolic: Int
+    +diastolic: Int
+}
+
+class PressureResult {
+    +age: Int
+    +idealSystolic: Int
+    +idealDiastolic: Int
+    +assessment: PressureAssessment
+}
+
+enum PressureAssessment {
+    LOW
+    NORMAL
+    HIGH
+}
+
+abstract class PressureState
+class Empty
+class Ready {
+    +input: PressureInput
+    +result: PressureResult
+}
+class Error {
+    +message: String
+    +lastInput: PressureInput?
+}
+
+MainActivity ..|> Listener : implements
+InputDialogFragment ..> Listener : sends input
+
+MainActivity --> PressureController : handles actions through
+MainActivity --> PressureModel : subscribes / reads state
+MainActivity ..> InputDialogFragment : opens input dialog
+
+PressureController --> PressureModel : updates
+PressureController ..> PressureInput : receives
+
+PressureModel o--> PressureState : stores
+PressureModel ..> PressureResult : calculates
+PressureModel ..> PressureInput : validates
+PressureModel --> MainActivity : notifies
+
+InputDialogFragment ..> PressureInput : creates
+
+PressureResult --> PressureAssessment
+Ready --|> PressureState
+Empty --|> PressureState
+Error --|> PressureState
+Ready --> PressureInput
+Ready --> PressureResult
+Error --> PressureInput
+
+note right of PressureModel
+Active model:
+after state changes it notifies
+all registered listeners.
+end note
+
+@enduml

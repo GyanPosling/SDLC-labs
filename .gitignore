@@ -1,0 +1,23 @@
+build/
+*/build/
+
+.vscode/
+.idea/
+
+*.exe
+*.out
+
+*.o
+
+CMakeCache.txt
+CMakeFiles/
+
+.DS_Store
+**/.DS_Store
+
+.codex
+
+.gradle/
+build/ и **/build/
+local.properties
+
