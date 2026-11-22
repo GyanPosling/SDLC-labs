@@ -1,0 +1,34 @@
+@startuml
+skinparam defaultFontName "GOST type B"
+skinparam monochrome true
+skinparam shadowing false
+
+left to right direction
+actor "Неаутентифицированный\nпользователь" as guest
+actor "Аутентифицированный\nпользователь" as user
+node "API НБРБ" as api <<external>>
+usecase "Просмотр актуальных\nкурсов" as rates
+usecase "Конвертация валют" as converter
+usecase "Просмотр графика\nизменений" as history
+usecase "Аутентификация\nпользователя" as login
+usecase "Обмен валют\nместами" as swap
+usecase "Получение валютных\nданных" as data
+usecase "Настройка\nуведомлений" as settings
+usecase "Выбор валюты" as currency
+usecase "Изменение порога" as threshold
+usecase "Информирование\nо скачке курса" as notice
+guest --> rates
+guest --> converter
+guest --> history
+guest --> login
+user -|> guest
+user --> settings
+user --> notice
+swap ..> converter : <<extend>>
+rates ..> data : <<include>>
+converter ..> data : <<include>>
+history ..> data : <<include>>
+data --> api
+currency -|> settings
+threshold -|> settings
+@enduml

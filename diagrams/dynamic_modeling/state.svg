@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Создано Microsoft Visio, экспорт SVG state.svg В — Состояния задачи -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events"
+		xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="11.6929in" height="8.26772in"
+		viewBox="0 0 841.89 595.276" xml:space="preserve" color-interpolation-filters="sRGB" class="st12">
+	<v:documentProperties v:langID="1049" v:metric="true" v:viewMarkup="false"/>
+
+	<style type="text/css">
+	<![CDATA[
+		.st1 {fill:#000000;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st2 {fill:#ffffff;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st3 {fill:#000000;font-family:GOST type B;font-size:0.75em}
+		.st4 {fill:#000000;stroke:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st5 {fill:#000000;font-family:GOST type B;font-size:0.583328em}
+		.st6 {font-size:1em}
+		.st7 {stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st8 {marker-end:url(#mrkr3-62);stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st9 {fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1;stroke-width:0.22935779816514}
+		.st10 {fill:none;stroke:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st11 {marker-start:url(#mrkr1-128);stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st12 {fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
+	]]>
+	</style>
+
+	<defs id="Markers">
+		<g id="lend3">
+			<path d="M 2 1 L 0 0 L 2 -1 " style="stroke-linecap:round;stroke-linejoin:round;fill:none"/>
+		</g>
+		<marker id="mrkr3-62" class="st9" v:arrowType="3" v:arrowSize="2" orient="auto" markerUnits="strokeWidth"
+				overflow="visible">
+			<use xlink:href="#lend3" transform="scale(-4.36,-4.36) "/>
+		</marker>
+		<g id="lend1">
+			<path d="M 1 -1 L 0 0 L 1 1 " style="stroke-linecap:round;stroke-linejoin:round;fill:none"/>
+		</g>
+		<marker id="mrkr1-128" class="st9" v:arrowType="1" v:arrowSize="2" orient="auto" markerUnits="strokeWidth"
+				overflow="visible">
+			<use xlink:href="#lend1" transform="scale(4.36) "/>
+		</marker>
+	</defs>
+	<g v:mID="5" v:index="3" v:groupContext="foregroundPage">
+		<title>В — Состояния правила</title>
+		<v:pageProperties v:drawingScale="0.0393701" v:pageScale="0.0393701" v:drawingUnits="24" v:shadowOffsetX="8.50394"
+				v:shadowOffsetY="-8.50394"/>
+		<v:layer v:name="Соединительная линия" v:index="0"/>
+		<g id="shape2-1" v:mID="2" v:groupContext="shape" transform="translate(295.92,-524.449)">
+			<title>RF_start</title>
+			<ellipse cx="10.08" cy="585.196" rx="10.08" ry="10.08" class="st1"/>
+		</g>
+		<g id="shape3-3" v:mID="3" v:groupContext="shape" transform="translate(234,-457.489)">
+			<title>RF_setup</title>
+			<desc>Настраивается</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(0.72,0.72,0.72,0.72)" v:tabSpace="42.5197"/>
+			<v:textRect cx="72" cy="572.236" width="144" height="46.08"/>
+			<rect x="0" y="549.196" width="144" height="46.08" rx="8.50394" ry="8.50394" class="st2"/>
+			<text x="43.08" y="574.94" class="st3" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Настраивается</text>		</g>
+		<g id="shape4-6" v:mID="4" v:groupContext="shape" transform="translate(234,-349.489)">
+			<title>RF_active</title>
+			<desc>Активно</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(0.72,0.72,0.72,0.72)" v:tabSpace="42.5197"/>
+			<v:textRect cx="72" cy="572.236" width="144" height="46.08"/>
+			<rect x="0" y="549.196" width="144" height="46.08" rx="8.50394" ry="8.50394" class="st2"/>
+			<text x="55.7" y="574.94" class="st3" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Активно</text>		</g>
+		<g id="shape5-9" v:mID="5" v:groupContext="shape" transform="translate(234,-241.489)">
+			<title>RF_triggered</title>
+			<desc>Сработало</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(0.72,0.72,0.72,0.72)" v:tabSpace="42.5197"/>
+			<v:textRect cx="72" cy="572.236" width="144" height="46.08"/>
+			<rect x="0" y="549.196" width="144" height="46.08" rx="8.50394" ry="8.50394" class="st2"/>
+			<text x="52" y="574.94" class="st3" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Сработало</text>		</g>
+		<g id="shape6-12" v:mID="6" v:groupContext="shape" transform="translate(234,-135.666)">
+			<title>RF_deleted</title>
+			<desc>Удалено</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(0.72,0.72,0.72,0.72)" v:tabSpace="42.5197"/>
+			<v:textRect cx="72" cy="572.236" width="144" height="46.08"/>
+			<rect x="0" y="549.196" width="144" height="46.08" rx="8.50394" ry="8.50394" class="st2"/>
+			<text x="56.62" y="574.94" class="st3" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Удалено</text>		</g>
+		<g id="shape7-15" v:mID="7" v:groupContext="shape" transform="translate(489.6,-349.489)">
+			<title>RF_disabled</title>
+			<desc>Отключено</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(0.72,0.72,0.72,0.72)" v:tabSpace="42.5197"/>
+			<v:textRect cx="72" cy="572.236" width="144" height="46.08"/>
+			<rect x="0" y="549.196" width="144" height="46.08" rx="8.50394" ry="8.50394" class="st2"/>
+			<text x="51.14" y="574.94" class="st3" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Отключено</text>		</g>
+		<g id="shape8-18" v:mID="8" v:groupContext="shape" transform="translate(293.76,-70.8661)">
+			<title>RF_finish</title>
+			<ellipse cx="12.24" cy="583.036" rx="12.24" ry="12.24" class="st2"/>
+		</g>
+		<g id="shape9-20" v:mID="9" v:groupContext="shape" transform="translate(297.187,-74.2933)">
+			<title>Лист.9</title>
+			<ellipse cx="8.8128" cy="586.463" rx="8.8128" ry="8.8128" class="st4"/>
+		</g>
+		<g id="shape10-22" v:mID="10" v:groupContext="shape" transform="translate(39.6,-460.369)">
+			<title>Лист.10</title>
+			<desc>Выбор валюты и порога изменения курса.</desc>
+			<v:textBlock v:margins="rect(0.72,0.72,0.72,0.72)" v:tabSpace="42.5197"/>
+			<v:textRect cx="82.8" cy="575.116" width="165.6" height="40.32"/>
+			<path d="M0 595.28 L0 554.96 L156.24 554.96 L165.6 564.32 L165.6 595.28 L0 595.28 Z" class="st2"/>
+			<text x="61.51" y="573.02" class="st5" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Выбор валюты<v:newlineChar/><tspan
+						x="42.73" dy="1.2em" class="st6">и порога изменения курса.</tspan></text>		</g>
+		<g id="shape11-26" v:mID="11" v:groupContext="shape" transform="translate(195.84,-491.329)">
+			<title>Лист.11</title>
+			<path d="M0 585.92 L0 595.28 L9.36 595.28" class="st7"/>
+		</g>
+		<g id="shape12-29" v:mID="12" v:groupContext="shape" transform="translate(39.6,-352.369)">
+			<title>Лист.12</title>
+			<desc>Отслеживание новых курсов по заданному правилу.</desc>
+			<v:textBlock v:margins="rect(0.72,0.72,0.72,0.72)" v:tabSpace="42.5197"/>
+			<v:textRect cx="82.8" cy="575.116" width="165.6" height="40.32"/>
+			<path d="M0 595.28 L0 554.96 L156.24 554.96 L165.6 564.32 L165.6 595.28 L0 595.28 Z" class="st2"/>
+			<text x="40.26" y="573.02" class="st5" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Отслеживание новых курсов<v:newlineChar/><tspan
+						x="48.95" dy="1.2em" class="st6">по заданному правилу.</tspan></text>		</g>
+		<g id="shape13-33" v:mID="13" v:groupContext="shape" transform="translate(195.84,-383.329)">
+			<title>Лист.13</title>
+			<path d="M0 585.92 L0 595.28 L9.36 595.28" class="st7"/>
+		</g>
+		<g id="shape14-36" v:mID="14" v:groupContext="shape" transform="translate(39.6,-244.369)">
+			<title>Лист.14</title>
+			<desc>Уведомление сформировано. Повтор по той же дате исключён.</desc>
+			<v:textBlock v:margins="rect(0.72,0.72,0.72,0.72)" v:tabSpace="42.5197"/>
+			<v:textRect cx="82.8" cy="575.116" width="165.6" height="40.32"/>
+			<path d="M0 595.28 L0 554.96 L156.24 554.96 L165.6 564.32 L165.6 595.28 L0 595.28 Z" class="st2"/>
+			<text x="41.17" y="573.02" class="st5" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Уведомление сформировано.<v:newlineChar/><tspan
+						x="30.88" dy="1.2em" class="st6">Повтор по той же дате исключён.</tspan></text>		</g>
+		<g id="shape15-40" v:mID="15" v:groupContext="shape" transform="translate(195.84,-275.329)">
+			<title>Лист.15</title>
+			<path d="M0 585.92 L0 595.28 L9.36 595.28" class="st7"/>
+		</g>
+		<g id="shape16-43" v:mID="16" v:groupContext="shape" transform="translate(39.6,-138.546)">
+			<title>Лист.16</title>
+			<desc>Правило удалено из личных настроек.</desc>
+			<v:textBlock v:margins="rect(0.72,0.72,0.72,0.72)" v:tabSpace="42.5197"/>
+			<v:textRect cx="82.8" cy="575.116" width="165.6" height="40.32"/>
+			<path d="M0 595.28 L0 554.96 L156.24 554.96 L165.6 564.32 L165.6 595.28 L0 595.28 Z" class="st2"/>
+			<text x="57.68" y="573.02" class="st5" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Правило удалено<v:newlineChar/><tspan
+						x="52.06" dy="1.2em" class="st6">из личных настроек.</tspan></text>		</g>
+		<g id="shape17-47" v:mID="17" v:groupContext="shape" transform="translate(195.84,-169.506)">
+			<title>Лист.17</title>
+			<path d="M0 585.92 L0 595.28 L9.36 595.28" class="st7"/>
+		</g>
+		<g id="shape18-50" v:mID="18" v:groupContext="shape" transform="translate(676.8,-352.369)">
+			<title>Лист.18</title>
+			<desc>Проверка порога временно не выполняется.</desc>
+			<v:textBlock v:margins="rect(0.72,0.72,0.72,0.72)" v:tabSpace="42.5197"/>
+			<v:textRect cx="68.4" cy="575.116" width="136.8" height="40.32"/>
+			<path d="M0 595.28 L0 554.96 L127.44 554.96 L136.8 564.32 L136.8 595.28 L0 595.28 Z" class="st2"/>
+			<text x="43.28" y="573.02" class="st5" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Проверка порога<v:newlineChar/><tspan
+						x="28.92" dy="1.2em" class="st6">временно не выполняется.</tspan></text>		</g>
+		<g id="shape19-54" v:mID="19" v:groupContext="shape" transform="translate(804.24,-383.329)">
+			<title>Лист.19</title>
+			<path d="M0 585.92 L0 595.28 L9.36 595.28" class="st7"/>
+		</g>
+		<g id="shape20-57" v:mID="20" v:groupContext="shape" transform="translate(901.276,70.8265) rotate(90)">
+			<title>Лист.20</title>
+			<path d="M0 595.28 L20.88 595.28" class="st8"/>
+		</g>
+		<g id="shape21-63" v:mID="21" v:groupContext="shape" transform="translate(901.276,137.786) rotate(90)">
+			<title>Лист.21</title>
+			<path d="M0 595.28 L61.92 595.28" class="st8"/>
+		</g>
+		<g id="shape22-68" v:mID="22" v:groupContext="shape" transform="translate(255.118,-425.197)">
+			<title>Лист.22</title>
+			<desc>Сохранить правило</desc>
+			<v:textBlock v:margins="rect(0.72,0.72,0.72,0.72)" v:tabSpace="42.5197"/>
+			<v:textRect cx="82.8" cy="585.196" width="165.6" height="20.16"/>
+			<rect x="0" y="575.116" width="165.6" height="20.16" class="st10"/>
+			<text x="54.09" y="587.3" class="st5" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Сохранить правило</text>		</g>
+		<g id="shape23-71" v:mID="23" v:groupContext="shape" transform="translate(901.276,245.786) rotate(90)">
+			<title>Лист.23</title>
+			<path d="M0 595.28 L61.92 595.28" class="st8"/>
+		</g>
+		<g id="shape24-76" v:mID="24" v:groupContext="shape" transform="translate(272.126,-300.472)">
+			<title>Лист.24</title>
+			<desc>Достигнут порог</desc>
+			<v:textBlock v:margins="rect(0.72,0.72,0.72,0.72)" v:tabSpace="42.5197"/>
+			<v:textRect cx="63" cy="584.476" width="126" height="21.6"/>
+			<rect x="0" y="573.676" width="126" height="21.6" class="st10"/>
+			<text x="36.92" y="586.58" class="st5" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Достигнут порог</text>		</g>
+		<g id="shape25-79" v:mID="25" v:groupContext="shape" transform="translate(-132.639,438.933) rotate(-101.962)">
+			<title>Лист.25</title>
+			<path d="M0 521.97 L-12.68 581.84 L50.71 595.28 L67.12 517.8 L86.85 521.97" class="st8"/>
+		</g>
+		<g id="shape26-84" v:mID="26" v:groupContext="shape" transform="translate(348.335,-238.11)">
+			<title>Лист.26</title>
+			<desc>Уведомление сформировано; продолжить отслеживание</desc>
+			<v:textBlock v:margins="rect(0.72,0.72,0.72,0.72)" v:tabSpace="42.5197"/>
+			<v:textRect cx="88.2" cy="580.876" width="176.4" height="28.8"/>
+			<rect x="0" y="566.476" width="176.4" height="28.8" class="st10"/>
+			<text x="46.57" y="578.78" class="st5" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Уведомление сформировано;<v:newlineChar/><tspan
+						x="48.25" dy="1.2em" class="st6">продолжить отслеживание</tspan></text>		</g>
+		<g id="shape27-88" v:mID="27" v:groupContext="shape" transform="translate(378,-383.329)">
+			<title>Лист.27</title>
+			<path d="M0 595.28 L111.6 595.28" class="st8"/>
+		</g>
+		<g id="shape28-93" v:mID="28" v:groupContext="shape" transform="translate(379.44,-381.01)">
+			<title>Лист.28</title>
+			<desc>Отключить правило</desc>
+			<v:textBlock v:margins="rect(0.72,0.72,0.72,0.72)" v:tabSpace="42.5197"/>
+			<v:textRect cx="54" cy="587.356" width="108" height="15.84"/>
+			<rect x="0" y="579.436" width="108" height="15.84" class="st10"/>
+			<text x="24.14" y="589.46" class="st5" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Отключить правило</text>		</g>
+		<g id="shape29-96" v:mID="29" v:groupContext="shape" transform="translate(489.6,828.822) rotate(180)">
+			<title>Лист.29</title>
+			<path d="M0 595.28 L111.6 595.28" class="st8"/>
+		</g>
+		<g id="shape30-101" v:mID="30" v:groupContext="shape" transform="translate(379.44,-359.751)">
+			<title>Лист.30</title>
+			<desc>Включить правило</desc>
+			<v:textBlock v:margins="rect(0.72,0.72,0.72,0.72)" v:tabSpace="42.5197"/>
+			<v:textRect cx="54" cy="587.356" width="108" height="15.84"/>
+			<rect x="0" y="579.436" width="108" height="15.84" class="st10"/>
+			<text x="26.49" y="589.46" class="st5" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Включить правило</text>		</g>
+		<g id="shape32-104" v:mID="32" v:groupContext="shape" transform="translate(530.476,-416.557)">
+			<title>Лист.32</title>
+			<desc>Удалить правило</desc>
+			<v:textBlock v:margins="rect(0.72,0.72,0.72,0.72)" v:tabSpace="42.5197"/>
+			<v:textRect cx="64.8" cy="586.636" width="129.6" height="17.28"/>
+			<rect x="0" y="577.996" width="129.6" height="17.28" class="st10"/>
+			<text x="39.2" y="588.74" class="st5" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Удалить правило</text>		</g>
+		<g id="shape34-107" v:mID="34" v:groupContext="shape" transform="translate(534.076,-240.945)">
+			<title>Лист.34</title>
+			<desc>Удалить правило</desc>
+			<v:textBlock v:margins="rect(0.72,0.72,0.72,0.72)" v:tabSpace="42.5197"/>
+			<v:textRect cx="61.2" cy="586.636" width="122.4" height="17.28"/>
+			<rect x="0" y="577.996" width="122.4" height="17.28" class="st10"/>
+			<text x="35.6" y="588.74" class="st5" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Удалить правило</text>		</g>
+		<g id="shape35-110" v:mID="35" v:groupContext="shape" transform="translate(901.276,459.609) rotate(90)">
+			<title>Лист.35</title>
+			<path d="M0 595.28 L40.32 595.28" class="st8"/>
+		</g>
+		<g id="shape37-115" v:mID="37" v:groupContext="shape" transform="translate(1156.88,245.786) rotate(90)">
+			<title>Лист.37</title>
+			<path d="M0 595.28 L190.78 595.28" class="st8"/>
+		</g>
+		<g id="shape38-120" v:mID="38" v:groupContext="shape" v:layerMember="0" transform="translate(378,-480.529)">
+			<title>Динамическая соединительная линия</title>
+			<path d="M0 595.28 L444.05 595.28 L444.05 914.23" class="st7"/>
+		</g>
+		<g id="shape39-123" v:mID="39" v:groupContext="shape" v:layerMember="0" transform="translate(378,-153.054)">
+			<title>Динамическая соединительная линия.39</title>
+			<path d="M0 589.62 L444.05 589.62 L444.05 586.75" class="st11"/>
+		</g>
+	</g>
+</svg>

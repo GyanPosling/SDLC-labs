@@ -1,0 +1,35 @@
+@startuml
+skinparam defaultFontName "GOST type B"
+skinparam monochrome true
+skinparam shadowing false
+state "Настраивается" as setup
+state "Активно" as active
+state "Сработало" as triggered
+state "Отключено" as disabled
+state "Удалено" as deleted
+[*] --> setup
+setup --> active : Сохранить правило
+active --> triggered : Достигнут порог
+triggered --> active : Уведомление сформировано; продолжить отслеживание
+active --> disabled : Отключить правило
+disabled --> active : Включить правило
+setup --> deleted : Удалить правило
+disabled --> deleted : Удалить правило
+deleted --> [*]
+note left of setup
+Выбор валюты и порога изменения курса.
+end note
+note left of active
+Отслеживание новых курсов по заданному правилу.
+end note
+note left of triggered
+Уведомление сформировано.
+Повтор по той же дате исключён.
+end note
+note right of disabled
+Проверка порога временно не выполняется.
+end note
+note left of deleted
+Правило удалено из личных настроек.
+end note
+@enduml

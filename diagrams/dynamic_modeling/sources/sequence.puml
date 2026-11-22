@@ -1,0 +1,34 @@
+@startuml
+skinparam defaultFontName "GOST type B"
+skinparam monochrome true
+skinparam shadowing false
+actor "Пользователь" as User
+participant ConverterController as Controller
+participant ConverterService as Service
+participant RateProvider as Provider
+participant "API НБРБ" as API <<external>>
+activate User
+User -> Controller : Нажать «Конвертировать»
+activate Controller
+Controller -> Service : convert(amount, from, to)
+activate Service
+Service -> Service : Проверить ввод validateInput()
+activate Service
+deactivate Service
+Service -> Provider : getRates(from, to)
+activate Provider
+Provider -> API : Получить официальные курсы
+activate API
+API --> Provider : Курсы, номиналы и дата
+deactivate API
+Provider --> Service : Курсы за одну единицу валюты
+deactivate Provider
+Service -> Service : Рассчитать сумму calculate()
+activate Service
+deactivate Service
+Service --> Controller : ConversionResult
+deactivate Service
+Controller --> User : Показать результат и дату курса
+deactivate Controller
+deactivate User
+@enduml
